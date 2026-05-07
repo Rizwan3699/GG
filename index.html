@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizwan Shaikh | Power Platform Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ====== CURSOR ====== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-letter">R</span><span class="brand-text">izwan</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#notes" class="nav-link">Notes</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="btn-admin-login" id="adminLoginBtn">
+                <i class="fas fa-lock"></i> Admin
+            </button>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== HOME ====== -->
+    <section class="section home-section" id="home">
+        <div class="home-bg-orb orb1"></div>
+        <div class="home-bg-orb orb2"></div>
+        <div class="home-bg-grid"></div>
+        <div class="home-content">
+            <div class="home-text">
+                <p class="home-greeting">Hello, I'm</p>
+                <h1 class="home-name">
+                    <span class="name-line">Rizwan</span>
+                    <span class="name-line accent">Shaikh</span>
+                </h1>
+                <div class="home-role">
+                    <span class="role-prefix">I build </span>
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="home-desc">Power Platform Developer with 3+ years of experience crafting intelligent business
+                    solutions using Power Apps, Power Automate, Power BI & SharePoint.</p>
+                <div class="home-cta">
+                    <button class="btn-primary"
+                        onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+                        View Projects <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-outline" id="resumeBtn">
+                        <i class="fas fa-file-pdf"></i> Resume
+                    </button>
+                </div>
+            </div>
+            <div class="home-visual">
+                <div class="avatar-ring">
+                    <div class="avatar-inner">
+                        <div class="avatar-initials">RS</div>
+                    </div>
+                    <div class="ring ring1"></div>
+                    <div class="ring ring2"></div>
+                    <div class="ring ring3"></div>
+                </div>
+                <div class="floating-tag tag1"><i class="fas fa-bolt"></i> Power Apps</div>
+                <div class="floating-tag tag2"><i class="fas fa-cogs"></i> Automate</div>
+                <div class="floating-tag tag3"><i class="fas fa-chart-bar"></i> Power BI</div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Developer</h3>
+                    <p>Passionate Power Platform developer building low-code solutions that automate workflows and
+                        empower businesses to do more with less.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Problem Solver</h3>
+                    <p>I translate complex business requirements into intuitive apps and automated workflows using
+                        Microsoft's Power Platform ecosystem.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Innovator</h3>
+                    <p>Always exploring new tools and techniques to push what's possible with Power Platform,
+                        SharePoint, and Azure services.</p>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="25">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Workflows Automated</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="accent">Skills</span></h2>
+            </div>
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Populated by JS -->
+            </div>
+            <!-- Admin add skill -->
+            <div class="admin-add-bar" id="adminAddSkillBar" style="display:none;">
+                <button class="btn-admin-action" id="addSkillBtn"><i class="fas fa-plus"></i> Add Skill</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">My <span class="accent">Projects</span></h2>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Populated by JS -->
+            </div>
+            <div class="admin-add-bar" id="adminAddProjectBar" style="display:none;">
+                <button class="btn-admin-action" id="addProjectBtn"><i class="fas fa-plus"></i> Add Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== EXPERIENCE ====== -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+            </div>
+            <div class="timeline" id="experienceTimeline">
+                <!-- Populated by JS -->
+            </div>
+            <div class="admin-add-bar" id="adminAddExpBar" style="display:none;">
+                <button class="btn-admin-action" id="addExpBtn"><i class="fas fa-plus"></i> Add Experience</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== NOTES ====== -->
+    <section class="section notes-section" id="notes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Knowledge Base</span>
+                <h2 class="section-title">Topics & <span class="accent">Notes</span></h2>
+            </div>
+            <div class="notes-container" id="notesContainer">
+                <!-- Populated by JS -->
+            </div>
+            <div class="admin-add-bar" id="adminAddTopicBar" style="display:none;">
+                <button class="btn-admin-action" id="addTopicBtn"><i class="fas fa-plus"></i> Add Topic</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>rizwan.shaikh3699@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p id="contactLinkedIn">—</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p id="contactGitHub">—</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:100%">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="footer-social" id="footerSocial">
+            <!-- Social links injected by JS -->
+        </div>
+        <p class="footer-copy">© 2025 Rizwan Shaikh. Built with passion &amp; Power Platform.</p>
+        <div class="admin-add-bar" id="adminSocialBar" style="display:none;">
+            <button class="btn-admin-action" id="addSocialBtn"><i class="fas fa-plus"></i> Add Social Link</button>
+        </div>
+    </footer>
+
+    <!-- ====== ADMIN LOGIN MODAL ====== -->
+    <div class="modal-overlay" id="adminLoginModal">
+        <div class="modal">
+            <button class="modal-close" id="closeAdminLogin"><i class="fas fa-times"></i></button>
+            <div class="modal-icon"><i class="fas fa-shield-alt"></i></div>
+            <h2>Admin Access</h2>
+            <p class="modal-sub">Enter credentials to unlock admin panel</p>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <input type="email" id="adminEmail" placeholder="Email" required />
+                </div>
+                <div class="form-group password-wrap">
+                    <input type="password" id="adminPassword" placeholder="Password" required />
+                    <button type="button" class="eye-btn" id="eyeBtn"><i class="fas fa-eye"></i></button>
+                </div>
+                <p class="form-error" id="loginError"></p>
+                <button type="submit" class="btn-primary" style="width:100%">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====== RESUME OTP MODAL ====== -->
+    <div class="modal-overlay" id="resumeModal">
+        <div class="modal">
+            <button class="modal-close" id="closeResumeModal"><i class="fas fa-times"></i></button>
+            <div class="modal-icon"><i class="fas fa-file-pdf"></i></div>
+            <h2>Access Resume</h2>
+            <p class="modal-sub">Enter your email to receive an OTP</p>
+            <div id="otpStep1">
+                <div class="form-group">
+                    <input type="email" id="userEmail" placeholder="Your Email" required />
+                </div>
+                <p class="form-error" id="otpError1"></p>
+                <button class="btn-primary" style="width:100%" id="sendOtpBtn">Send OTP <i
+                        class="fas fa-paper-plane"></i></button>
+            </div>
+            <div id="otpStep2" style="display:none;">
+                <p class="otp-info">OTP sent to <strong id="otpEmailDisplay"></strong></p>
+                <div class="otp-inputs" id="otpInputs">
+                    <input type="text" maxlength="1" class="otp-box" />
+                    <input type="text" maxlength="1" class="otp-box" />
+                    <input type="text" maxlength="1" class="otp-box" />
+                    <input type="text" maxlength="1" class="otp-box" />
+                    <input type="text" maxlength="1" class="otp-box" />
+                    <input type="text" maxlength="1" class="otp-box" />
+                </div>
+                <p class="form-error" id="otpError2"></p>
+                <button class="btn-primary" style="width:100%" id="verifyOtpBtn">Verify & Download</button>
+                <button class="btn-outline" style="width:100%;margin-top:8px" id="resendOtpBtn">Resend OTP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== SKILL MODAL ====== -->
+    <div class="modal-overlay" id="skillModal">
+        <div class="modal">
+            <button class="modal-close" id="closeSkillModal"><i class="fas fa-times"></i></button>
+            <h2 id="skillModalTitle">Add Skill</h2>
+            <form id="skillForm">
+                <input type="hidden" id="skillId" />
+                <div class="form-group">
+                    <input type="text" id="skillName" placeholder="Skill Name (e.g. Power Apps)" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="skillIcon" placeholder="FA Icon class (e.g. fas fa-bolt)" />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="skillColor" placeholder="Color (e.g. #7c3aed)" />
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%">Save Skill</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====== PROJECT MODAL ====== -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal modal-wide">
+            <button class="modal-close" id="closeProjectModal"><i class="fas fa-times"></i></button>
+            <h2 id="projectModalTitle">Add Project</h2>
+            <form id="projectForm">
+                <input type="hidden" id="projectId" />
+                <div class="form-group">
+                    <input type="text" id="projectTitle" placeholder="Project Title" required />
+                </div>
+                <div class="form-group">
+                    <textarea id="projectDesc" rows="3" placeholder="Description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="projectTech" placeholder="Technologies (comma separated)" />
+                </div>
+                <div class="form-group">
+                    <input type="url" id="projectGithub" placeholder="GitHub Link" />
+                </div>
+                <div class="form-group">
+                    <input type="url" id="projectDemo" placeholder="Live Demo Link" />
+                </div>
+                <div class="form-group">
+                    <input type="url" id="projectImage" placeholder="Image URL (optional)" />
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%">Save Project</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====== EXPERIENCE MODAL ====== -->
+    <div class="modal-overlay" id="expModal">
+        <div class="modal modal-wide">
+            <button class="modal-close" id="closeExpModal"><i class="fas fa-times"></i></button>
+            <h2 id="expModalTitle">Add Experience</h2>
+            <form id="expForm">
+                <input type="hidden" id="expId" />
+                <div class="form-group">
+                    <input type="text" id="expCompany" placeholder="Company Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="expRole" placeholder="Role / Position" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="expDuration" placeholder="Duration (e.g. Jan 2022 – Present)" required />
+                </div>
+                <div class="form-group">
+                    <textarea id="expDesc" rows="4" placeholder="Description / Responsibilities"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%">Save Experience</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====== TOPIC MODAL ====== -->
+    <div class="modal-overlay" id="topicModal">
+        <div class="modal">
+            <button class="modal-close" id="closeTopicModal"><i class="fas fa-times"></i></button>
+            <h2 id="topicModalTitle">Add Topic</h2>
+            <form id="topicForm">
+                <input type="hidden" id="topicId" />
+                <div class="form-group">
+                    <input type="text" id="topicName" placeholder="Topic Name" required />
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%">Save Topic</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====== NOTE MODAL ====== -->
+    <div class="modal-overlay" id="noteModal">
+        <div class="modal">
+            <button class="modal-close" id="closeNoteModal"><i class="fas fa-times"></i></button>
+            <h2 id="noteModalTitle">Add Note</h2>
+            <form id="noteForm">
+                <input type="hidden" id="noteId" />
+                <input type="hidden" id="noteTopicId" />
+                <div class="form-group">
+                    <textarea id="noteContent" rows="5" placeholder="Note content..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%">Save Note</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====== SOCIAL MODAL ====== -->
+    <div class="modal-overlay" id="socialModal">
+        <div class="modal">
+            <button class="modal-close" id="closeSocialModal"><i class="fas fa-times"></i></button>
+            <h2 id="socialModalTitle">Add Social Link</h2>
+            <form id="socialForm">
+                <input type="hidden" id="socialId" />
+                <div class="form-group">
+                    <input type="text" id="socialLabel" placeholder="Label (e.g. LinkedIn)" required />
+                </div>
+                <div class="form-group">
+                    <input type="url" id="socialUrl" placeholder="URL" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="socialIcon" placeholder="FA Icon (e.g. fab fa-linkedin)" />
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====== RESUME ADMIN MODAL ====== -->
+    <div class="modal-overlay" id="resumeAdminModal">
+        <div class="modal">
+            <button class="modal-close" id="closeResumeAdmin"><i class="fas fa-times"></i></button>
+            <div class="modal-icon"><i class="fas fa-file-pdf"></i></div>
+            <h2>Resume Management</h2>
+            <div id="resumeAdminContent">
+                <!-- Rendered by JS -->
+            </div>
+            <div class="form-group" style="margin-top:16px">
+                <label class="file-label" id="resumeFileLabel">
+                    <i class="fas fa-upload"></i> Choose PDF
+                    <input type="file" id="resumeFileInput" accept=".pdf" style="display:none" />
+                </label>
+            </div>
+            <button class="btn-primary" style="width:100%;margin-top:8px" id="uploadResumeBtn">Upload / Replace
+                Resume</button>
+            <button class="btn-danger" style="width:100%;margin-top:8px" id="deleteResumeBtn">Delete Resume</button>
+        </div>
+    </div>
+
+    <!-- ====== TOAST ====== -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
